@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rcv_radio_button_item_height"
+    android:paddingLeft="@dimen/rcv_radio_button_item_padding_lr"
+    android:paddingRight="@dimen/rcv_radio_button_item_padding_lr"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/rcv_radio_button_item_bg">
+    <!--
+        android:descendantFocusability 属性可以控制焦点抢占问题
+            beforeDescendants: viewgroup会优先其子类控件而获取到焦点
+            afterDescendants: 当子类不需要获取焦点时 父类就获取焦点
+            blocksDescendants: 父类会覆盖子类而直接获得焦点
+        -->
+    <ImageView
+        android:id="@+id/iv_list_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/rcv_radio_button_item_icon_margin_right" />
+
+    <TextView
+        android:id="@+id/tv_list_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="16sp"/>
+
+    <RadioButton
+        android:id="@+id/rb_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/rcv_radio_button_item_button_padding"
+        android:button="@null"
+        android:focusable="false"
+        android:clickable="false"
+        android:background="@drawable/radio_button_bg_selector"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RecyclerViewRadioButton</string>
+
+    <string name="alipay">Ali Pay</string>
+    <string name="wechat_pay">WeChat Pay</string>
+</resources>
